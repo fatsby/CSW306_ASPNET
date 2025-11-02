@@ -1,0 +1,6 @@
+@Lab3_LeMinhTri_2231200125_HostAddress = http://localhost:5298
+
+GET {{Lab3_LeMinhTri_2231200125_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
