@@ -1,5 +1,6 @@
-using Microsoft.EntityFrameworkCore;
 using Lab3_LeMinhTri_2231200125.Data;
+using Lab3_LeMinhTri_2231200125.Service;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>(opt =>
     opt.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
+builder.Services.AddScoped<IFileService, FileService>();
 
 var app = builder.Build();
 

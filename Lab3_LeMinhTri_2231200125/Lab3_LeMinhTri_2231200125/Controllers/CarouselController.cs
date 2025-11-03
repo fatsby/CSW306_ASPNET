@@ -1,7 +1,8 @@
-﻿using Lab3_LeMinhTri_2231200125.Data;
-using Lab3_LeMinhTri_2231200125.Models;
+﻿using Azure.Core;
+using Lab3_LeMinhTri_2231200125.Data;
 using Lab3_LeMinhTri_2231200125.DTOs;
-
+using Lab3_LeMinhTri_2231200125.Models;
+using Lab3_LeMinhTri_2231200125.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -11,9 +12,11 @@ namespace Lab3_LeMinhTri_2231200125.Controllers {
     [ApiController]
     public class CarouselController : ControllerBase {
         private readonly AppDbContext _dbContext;
+        private readonly IFileService _fileService;
 
-        public CarouselController(AppDbContext dbContext) {
+        public CarouselController(AppDbContext dbContext, IFileService fileService) {
             _dbContext = dbContext;
+            _fileService = fileService;
         }
 
         [HttpGet]
@@ -36,7 +39,8 @@ namespace Lab3_LeMinhTri_2231200125.Controllers {
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateAsync([FromBody] CreateCarouselDTO carouselRequest) {
+        [Consumes("multipart/form-data")]
+        public async Task<IActionResult> CreateAsync([FromForm] CreateCarouselDTO carouselRequest) {
             if (!ModelState.IsValid) {
                 return BadRequest(ModelState);
             }
@@ -47,8 +51,10 @@ namespace Lab3_LeMinhTri_2231200125.Controllers {
                 return BadRequest(new { Message = "Order already exists" });
             }
 
+            var imageUrl = await _fileService.SaveFileAsync(carouselRequest.ImageFile, "carousel_images");
+
             var newCarousel = new Carousel {
-                ImageUrl = carouselRequest.ImageUrl,
+                ImageUrl = imageUrl,
                 Title = carouselRequest.Title,
                 Description = carouselRequest.Description,
                 LinkUrl = carouselRequest.LinkUrl,
@@ -65,9 +71,6 @@ namespace Lab3_LeMinhTri_2231200125.Controllers {
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateAsync(int id, [FromBody] Carousel updatedCarousel) {
-            //if (id != updatedCarousel.CarouselId) {
-            //    return BadRequest(new { Message = "ID mismatch" });
-            //}
             var carousel = await _dbContext.Carousel.FindAsync(id);
             if (carousel == null) {
                 return NotFound(new { Message = "Carousel not found" });
