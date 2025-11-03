@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Documents\\GitHub\\CSE310-Project-A\\backend\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj": {}
+    "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Documents\\GitHub\\CSE310-Project-A\\backend\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj": {
+    "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\CSE310-Project-A\\backend\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj",
         "projectName": "Lab3_LeMinhTri_2231200125",
-        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\CSE310-Project-A\\backend\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj",
+        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\CSE310-Project-A\\backend\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

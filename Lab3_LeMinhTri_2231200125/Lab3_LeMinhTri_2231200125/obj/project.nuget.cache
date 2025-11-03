@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fH6nqCRKCzM=",
+  "dgSpecHash": "dWrAisY12xI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Documents\\GitHub\\CSE310-Project-A\\backend\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

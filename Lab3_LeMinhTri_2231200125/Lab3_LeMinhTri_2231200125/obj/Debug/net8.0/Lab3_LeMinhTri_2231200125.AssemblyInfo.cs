@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lab3_LeMinhTri_2231200125")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d139b0f6d227f429d0241e32b9b1b1222a0f014")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d693509a521a61b0bda3f979bac829ca4c3893cd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lab3_LeMinhTri_2231200125")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lab3_LeMinhTri_2231200125")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

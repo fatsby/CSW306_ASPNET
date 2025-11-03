@@ -15,6 +15,7 @@ namespace Lab3_LeMinhTri_2231200125.Data
         public DbSet<Author> Authors { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Loan> Loans { get; set; }
+        public DbSet<Carousel> Carousel { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -31,6 +32,11 @@ namespace Lab3_LeMinhTri_2231200125.Data
             modelBuilder.Entity<Book>()
                 .HasIndex(b => b.BookCode)
                 .IsUnique();
+
+            //seeders (need migration)
+            modelBuilder.Entity<Carousel>().HasData(
+                new Carousel { CarouselId = 1, ImageUrl = "/carousel_images/image1.jpg.", Title = "Te Liet", Order = 1, IsActive = true, CreatedDate = DateTime.Now, UpdatedDate = DateTime.Now }
+            );
         }
     }
 }
