@@ -56,8 +56,8 @@ namespace Lab3_LeMinhTri_2231200125.Controllers {
             var newCarousel = new Carousel {
                 ImageUrl = imageUrl,
                 Title = carouselRequest.Title,
-                Description = carouselRequest.Description,
-                LinkUrl = carouselRequest.LinkUrl,
+                Description = carouselRequest.Description ?? "",
+                LinkUrl = carouselRequest.LinkUrl ?? "",
                 Order = carouselRequest.Order,
                 IsActive = true,
                 CreatedDate = DateTime.Now,
@@ -66,25 +66,63 @@ namespace Lab3_LeMinhTri_2231200125.Controllers {
 
             _dbContext.Carousel.Add(newCarousel);
             await _dbContext.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetByIdAsync), new { id = newCarousel.CarouselId }, newCarousel);
+            return Ok(newCarousel);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateAsync(int id, [FromBody] Carousel updatedCarousel) {
-            var carousel = await _dbContext.Carousel.FindAsync(id);
-            if (carousel == null) {
-                return NotFound(new { Message = "Carousel not found" });
-            }
+        [Consumes("multipart/form-data")]
+        public async Task<IActionResult> UpdateAsync(int id, [FromForm] UpdateCarouselDTO request) {
             if (!ModelState.IsValid) {
                 return BadRequest(ModelState);
             }
-            carousel.ImageUrl = updatedCarousel.ImageUrl;
-            carousel.Title = updatedCarousel.Title;
-            carousel.Description = updatedCarousel.Description;
-            carousel.LinkUrl = updatedCarousel.LinkUrl;
-            carousel.Order = updatedCarousel.Order;
-            carousel.IsActive = updatedCarousel.IsActive;
-            carousel.UpdatedDate = DateTime.Now;
+
+            //find the carousel to update
+            var carouselToUpdate = await _dbContext.Carousel.FindAsync(id);
+            if (carouselToUpdate == null) {
+                return NotFound(new { Message = "Carousel not found" });
+            }
+
+            //check if the order already exists for another carousel
+            var orderExists = await _dbContext.Carousel
+        .AnyAsync(c => c.Order == request.Order && c.CarouselId != id);
+
+            if (orderExists) {
+                return BadRequest(new { Message = "Order already exists for another Carousel" });
+            }
+
+            //handle image
+            if (request.ImageFile != null && request.ImageFile.Length > 0) {
+                //delete old image
+                _fileService.DeleteFile(carouselToUpdate.ImageUrl);
+                //save new image
+                var newImageUrl = await _fileService.SaveFileAsync(request.ImageFile, "carousel_images");
+                carouselToUpdate.ImageUrl = newImageUrl;
+            }
+
+            carouselToUpdate.Title = request.Title;
+            carouselToUpdate.Description = request.Description ?? carouselToUpdate.Description;
+            carouselToUpdate.LinkUrl = request.LinkUrl ?? carouselToUpdate.LinkUrl;
+            carouselToUpdate.Order = request.Order;
+            carouselToUpdate.IsActive = request.IsActive;
+            carouselToUpdate.UpdatedDate = DateTime.Now;
+
+            _dbContext.Carousel.Update(carouselToUpdate);
+
+            await _dbContext.SaveChangesAsync();
+            return Ok(carouselToUpdate);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteAsync(int id) {
+            var carouselToDelete = await _dbContext.Carousel.FindAsync(id);
+            if (carouselToDelete == null) {
+                return NotFound(new { Message = "Carousel not found" });
+            }
+            //delete image file
+            _fileService.DeleteFile(carouselToDelete.ImageUrl);
+
+
+            _dbContext.Carousel.Remove(carouselToDelete);
             await _dbContext.SaveChangesAsync();
             return NoContent();
         }

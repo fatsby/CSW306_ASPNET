@@ -14,10 +14,13 @@ namespace Lab3_LeMinhTri_2231200125.Models
 
         public string? Description { get; set; }
 
-        public string? BookCode { get; set; }
+        [Required]
+        public string BookCode { get; set; }
 
-        public string? Publisher { get; set; }
+        [Required]
+        public string Publisher { get; set; }
 
+        [Required]
         public DateTime PublishedYear { get; set; }
 
         // Foreign Key for Category
@@ -44,9 +47,11 @@ namespace Lab3_LeMinhTri_2231200125.Models
 
         public DateTime CreatedDate { get; set; }
 
-        public string? Avatar { get; set; } // Cover image path
+        public string? CoverImageUrl { get; set; } // Cover image path
 
-        public string? Pdf { get; set; } // PDF file path
+        public string? PdfUrl { get; set; } // PDF file path
+
+        public bool IsActive { get; set; } = true;
 
         // nav properties
 
