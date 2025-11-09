@@ -1,6 +1,6 @@
 ﻿using Azure.Core;
 using Lab3_LeMinhTri_2231200125.Data;
-using Lab3_LeMinhTri_2231200125.DTOs;
+using Lab3_LeMinhTri_2231200125.DTOs.CarouselDTOs;
 using Lab3_LeMinhTri_2231200125.Models;
 using Lab3_LeMinhTri_2231200125.Service;
 using Microsoft.AspNetCore.Http;

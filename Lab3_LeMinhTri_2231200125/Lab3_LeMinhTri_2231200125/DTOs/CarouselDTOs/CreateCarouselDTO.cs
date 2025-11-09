@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Lab3_LeMinhTri_2231200125.DTOs {
+namespace Lab3_LeMinhTri_2231200125.DTOs.CarouselDTOs {
     public class CreateCarouselDTO {
         [Required]
         public required IFormFile ImageFile { get; set; }
