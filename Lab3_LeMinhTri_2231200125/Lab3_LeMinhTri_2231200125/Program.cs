@@ -1,6 +1,7 @@
 using Lab3_LeMinhTri_2231200125.Data;
 using Lab3_LeMinhTri_2231200125.Service;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +15,11 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(opt =>
     opt.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 builder.Services.AddScoped<IFileService, FileService>();
+
+builder.Services.AddControllers().AddJsonOptions(options => {
+    // tells the serializer to stop when it detects a loop.
+    options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+});
 
 var app = builder.Build();
 

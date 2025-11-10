@@ -17,5 +17,8 @@ namespace Lab3_LeMinhTri_2231200125.DTOs.BookDTOs {
 
         public IFormFile? CoverImage { get; set; }
         public IFormFile? PdfFile { get; set; }
+
+        public int? TotalCopies { get; set; }
+        public int? AvailableCopies { get; set; }
     }
 }

@@ -26,5 +26,13 @@ namespace Lab3_LeMinhTri_2231200125.DTOs.BookDTOs {
         public IFormFile? CoverImage { get; set; }
 
         public IFormFile? PdfFile { get; set; }
+
+        [Required]
+        [Range(0, int.MaxValue, ErrorMessage = "Total copies must be a positive number.")]
+        public int TotalCopies { get; set; }
+
+        [Required]
+        [Range(0, int.MaxValue, ErrorMessage = "Available copies must be a positive number.")]
+        public int AvailableCopies { get; set; }
     }
 }

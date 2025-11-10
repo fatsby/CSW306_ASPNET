@@ -20,7 +20,7 @@ namespace Lab3_LeMinhTri_2231200125.Controllers {
 
         [HttpGet]
         public async Task<IActionResult> GetAsync([FromQuery] string? Title, [FromQuery] int? CategoryID, [FromQuery] int? AuthorID) {
-            var query = _dbContext.Books.AsQueryable();
+            var query = _dbContext.Books.Include(b => b.Loans).AsQueryable();
 
             query = query.Where(b => b.IsActive); // Only active books
 
@@ -42,7 +42,7 @@ namespace Lab3_LeMinhTri_2231200125.Controllers {
         [HttpGet("{id}")]
         [ActionName("GetByIdAsync")]
         public async Task<IActionResult> GetByIdAsync(int id) {
-            var book = await _dbContext.Books.FindAsync(id);
+            var book = await _dbContext.Books.Include(b => b.Loans).FirstOrDefaultAsync(b => b.BookId == id);
             if (book == null) {
                 return NotFound(new { Message = "Book not found" });
             }
@@ -65,6 +65,10 @@ namespace Lab3_LeMinhTri_2231200125.Controllers {
             }
             if (!categoryExists) {
                 return BadRequest(new { Message = $"Category with ID {request.CategoryId} not found." });
+            }
+
+            if (request.AvailableCopies > request.TotalCopies) {
+                return BadRequest(new { Message = "AvailableCopies cannot be greater than TotalCopies." });
             }
 
             //CoverImage and PDF validation and saving
@@ -90,6 +94,8 @@ namespace Lab3_LeMinhTri_2231200125.Controllers {
                 PdfUrl = PdfFileUrl,
                 CreatedDate = DateTime.Now,
                 IsActive = true,
+                TotalCopies = request.TotalCopies,
+                AvailableCopies = request.AvailableCopies
             };
 
             _dbContext.Books.Add(newBook);
@@ -131,7 +137,7 @@ namespace Lab3_LeMinhTri_2231200125.Controllers {
                 var existingBookWithSameCode = await _dbContext.Books
                     .AnyAsync(b => b.BookCode == request.BookCode && b.BookId != id);
                 if (existingBookWithSameCode) {
-                                       return BadRequest(new { Message = $"Another book with BookCode {request.BookCode} already exists." });
+                    return BadRequest(new { Message = $"Another book with BookCode {request.BookCode} already exists." });
                 }
             }
 
@@ -153,6 +159,8 @@ namespace Lab3_LeMinhTri_2231200125.Controllers {
             bookToUpdate.PublishedYear = request.PublishedYear ?? bookToUpdate.PublishedYear;
             bookToUpdate.CategoryId = request.CategoryId ?? bookToUpdate.CategoryId;
             bookToUpdate.AuthorId = request.AuthorId ?? bookToUpdate.AuthorId;
+            bookToUpdate.TotalCopies = request.TotalCopies ?? bookToUpdate.TotalCopies;
+            bookToUpdate.AvailableCopies = request.AvailableCopies ?? bookToUpdate.AvailableCopies;
 
             _dbContext.Books.Update(bookToUpdate);
             await _dbContext.SaveChangesAsync();
@@ -169,12 +177,48 @@ namespace Lab3_LeMinhTri_2231200125.Controllers {
             //Delete associated files
             _fileService.DeleteFile(bookToDelete.CoverImageUrl);
             _fileService.DeleteFile(bookToDelete.PdfUrl);
-            
+
             //soft delete
             bookToDelete.IsActive = false;
 
             await _dbContext.SaveChangesAsync();
             return Ok(new { Message = "Book deleted successfully" });
         }
-    }
+
+        [HttpGet("deleted")]
+        public async Task<IActionResult> GetDeletedBooksAsync() {
+            var deletedBooks = await _dbContext.Books
+                .Where(b => !b.IsActive)
+                .ToListAsync();
+            return Ok(deletedBooks);
+        }
+
+        [HttpPatch("{id}/restore")]
+        public async Task<IActionResult> RestoreBookAsync(int id) {
+            var bookToRestore = await _dbContext.Books.FindAsync(id);
+            if (bookToRestore == null) {
+                return NotFound(new { Message = $"Book with ID {id} not found" });
+            }
+            if (bookToRestore.IsActive) {
+                return BadRequest(new { Message = "Book is already active" });
+            }
+            bookToRestore.IsActive = true;
+            await _dbContext.SaveChangesAsync();
+            return Ok(new { Message = "Book restored successfully" });
+        }
+
+        [HttpDelete("{id}/hard")]
+        public async Task<IActionResult> HardDeleteAsync(int id) {
+            var bookToDelete = await _dbContext.Books.FindAsync(id);
+            if (bookToDelete == null) {
+                return NotFound(new { Message = $"Book with ID {id} not found" });
+            }
+            //Delete associated files
+            _fileService.DeleteFile(bookToDelete.CoverImageUrl);
+            _fileService.DeleteFile(bookToDelete.PdfUrl);
+            _dbContext.Books.Remove(bookToDelete);
+            await _dbContext.SaveChangesAsync();
+            return Ok(new { Message = "Book permanently deleted successfully" });
+        }
+        }
 }

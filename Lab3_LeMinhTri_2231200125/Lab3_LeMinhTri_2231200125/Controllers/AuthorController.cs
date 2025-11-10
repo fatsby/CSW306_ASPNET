@@ -1,6 +1,7 @@
 ﻿using Lab3_LeMinhTri_2231200125.Data;
 using Lab3_LeMinhTri_2231200125.Service;
 using Lab3_LeMinhTri_2231200125.DTOs.AuthorDTOs;
+using Lab3_LeMinhTri_2231200125.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -24,7 +25,7 @@ namespace Lab3_LeMinhTri_2231200125.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAsync([FromQuery] string? name)
         {
-            var query = _dbContext.Authors.AsQueryable();
+            var query = _dbContext.Authors.Include(a => a.Books).AsQueryable();
 
             query = query.Where(a => a.IsActive); // Only active authors
 
@@ -42,7 +43,7 @@ namespace Lab3_LeMinhTri_2231200125.Controllers
         [ActionName("GetByIdAsync")]
         public async Task<IActionResult> GetByIdAsync(int id)
         {
-            var author = await _dbContext.Authors.FindAsync(id);
+            var author = await _dbContext.Authors.Include(a => a.Books).FirstOrDefaultAsync(a => a.AuthorId == id);
             if (author == null)
             {
                 return NotFound(new { Message = "Author not found" });
