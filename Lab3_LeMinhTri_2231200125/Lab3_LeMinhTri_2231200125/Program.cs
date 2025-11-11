@@ -2,6 +2,9 @@ using Lab3_LeMinhTri_2231200125.Data;
 using Lab3_LeMinhTri_2231200125.Service;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +24,32 @@ builder.Services.AddControllers().AddJsonOptions(options => {
     options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
 });
 
+//auth
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options => {
+        options.TokenValidationParameters = new TokenValidationParameters {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+        };
+    });
+
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+builder.Services.AddCors(options => {
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy => {
+                          // "http://127.0.0.1:5500" is the default for Live Server
+                          // "http://localhost:3000" is common for React
+                          policy.WithOrigins("http://127.0.0.1:5500", "http://localhost:3000")
+                                .AllowAnyHeader()
+                                .AllowAnyMethod();
+                      });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -32,6 +61,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+app.UseCors(MyAllowSpecificOrigins);
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

@@ -30,7 +30,8 @@ namespace Lab3_LeMinhTri_2231200125.Models
 
         public DateTime CreatedDate { get; set; }
 
-        public string? UserCode { get; set; }
+        [Required]
+        public string UserCode { get; set; }
 
         public bool IsLocked { get; set; }
 
@@ -51,8 +52,9 @@ namespace Lab3_LeMinhTri_2231200125.Models
             CreatedDate = DateTime.Now;
             IsLocked = false;
             IsDeleted = false;
-            IsActive = true;
+            IsActive = false;
             Loans = new List<Loan>();
+            Status = 0;
         }
     }
 }

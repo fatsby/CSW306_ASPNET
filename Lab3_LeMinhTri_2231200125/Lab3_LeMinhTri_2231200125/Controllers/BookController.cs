@@ -220,5 +220,18 @@ namespace Lab3_LeMinhTri_2231200125.Controllers {
             await _dbContext.SaveChangesAsync();
             return Ok(new { Message = "Book permanently deleted successfully" });
         }
+
+        [HttpGet("{id}/read")]
+        public async Task<IActionResult> ReadBookAsync(int id) {
+            var book = await _dbContext.Books.FindAsync(id);
+            if (book == null) {
+                return NotFound(new { Message = $"Book with ID {id} not found" });
+            }
+
+            if (string.IsNullOrEmpty(book.PdfUrl)) {
+                return NotFound(new { Message = "PDF not found for this book." });
+            }
+            return Redirect(book.PdfUrl);
         }
+    }
 }

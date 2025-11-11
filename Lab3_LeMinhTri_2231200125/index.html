@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Reader</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #book-details {
+            margin-bottom: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 80vh;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Book Reader</h1>
+
+    <div id="book-details">
+        <h2>Loading book...</h2>
+        <p id="book-description"></p>
+    </div>
+
+    <iframe id="pdf-viewer" title="Book PDF Viewer"></iframe>
+
+    <script>
+        const API_BASE_URL = "https://localhost:7136";
+        const BOOK_ID = 2;
+
+        const bookDetailsDiv = document.getElementById("book-details");
+        const bookTitleElement = bookDetailsDiv.querySelector("h2");
+        const bookDescriptionElement = document.getElementById("book-description");
+        const pdfViewer = document.getElementById("pdf-viewer");
+
+        async function loadBook() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/api/books/${BOOK_ID}`);
+
+                if (!response.ok) {
+                    bookTitleElement.textContent = "Error loading book.";
+                    bookDescriptionElement.textContent = `Book with ID ${BOOK_ID} not found.`;
+                    return;
+                }
+
+                const book = await response.json();
+
+                bookTitleElement.textContent = book.title;
+                bookDescriptionElement.textContent = book.description;
+
+                pdfViewer.src = `${API_BASE_URL}/api/books/${BOOK_ID}/read`;
+
+            } catch (error) {
+                console.error("Error fetching book:", error);
+                bookTitleElement.textContent = "Error connecting to API.";
+            }
+        }
+
+        window.onload = loadBook;
+    </script>
+
+</body>
+</html>
