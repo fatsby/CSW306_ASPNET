@@ -108,14 +108,21 @@ namespace Lab3_LeMinhTri_2231200125.Controllers {
             {
                 new Claim(JwtRegisteredClaimNames.Sub, user.Email),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()) // Add user ID as a claim
+                new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()), // Add user ID as a claim
+                new Claim(ClaimTypes.Role, user.Role), // Add user role as a claim
+                new Claim(ClaimTypes.Name, user.Fullname), // Add full name as a claim
+
+                new Claim("IsActive", user.IsActive.ToString()), //exercise 6
+                new Claim("CreatedDate", user.CreatedDate.ToString("o")), // exercise 8
+                new Claim("CanManageCategories", user.CanManageCategories.ToString()), // exercise 9
+                new Claim("EmailConfirmed", user.EmailConfirmed.ToString()) // exercise 10)
             };
 
             var token = new JwtSecurityToken(
                 issuer: _configuration["Jwt:Issuer"],
                 audience: _configuration["Jwt:Audience"],
                 claims: claims,
-                expires: DateTime.Now.AddMinutes(30), // Token expires in 30 minutes
+                expires: DateTime.Now.AddMinutes(60), // Token expires in 30 minutes
                 signingCredentials: creds
             );
 

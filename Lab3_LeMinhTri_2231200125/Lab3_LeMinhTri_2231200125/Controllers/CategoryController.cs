@@ -2,6 +2,7 @@
 using Lab3_LeMinhTri_2231200125.DTOs.CategoryDTOs;
 using Lab3_LeMinhTri_2231200125.Models;
 using Lab3_LeMinhTri_2231200125.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Lab3_LeMinhTri_2231200125.Controllers {
     [Route("api/categories")]
     [ApiController]
+    [Authorize(Policy = "ManageActiveCategories")]
     public class CategoryController : ControllerBase {
         private readonly AppDbContext _dbContext;
         private readonly IFileService _fileService;

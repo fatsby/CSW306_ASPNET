@@ -43,6 +43,13 @@ namespace Lab3_LeMinhTri_2231200125.Models
 
         public string? Avatar { get; set; }
 
+        [Required]
+        public string Role { get; set; } = "User";
+
+        public bool CanManageCategories { get; set; } = false;
+
+        public bool EmailConfirmed { get; set; } = false;
+
         // nav properties
         // 1 User can have many Loans
         public virtual ICollection<Loan> Loans { get; set; }

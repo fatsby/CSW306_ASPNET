@@ -1,5 +1,6 @@
 ﻿using Lab3_LeMinhTri_2231200125.Data;
 using Lab3_LeMinhTri_2231200125.DTOs.BookDTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -14,6 +15,7 @@ namespace Lab3_LeMinhTri_2231200125.Controllers {
         }
 
         [HttpGet("top-borrowed")]
+        [Authorize(Policy = "AdminOrLibrarian")]
         public async Task<IActionResult> GetTopBorrowedBooks(
             [FromQuery] DateTime fromDate,
             [FromQuery] DateTime toDate,

@@ -7,24 +7,48 @@
       "RelativeMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|solutionrelative:lab3_leminhtri_2231200125\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|c:\\users\\admin\\documents\\github\\csw306_aspnet\\lab3_leminhtri_2231200125\\lab3_leminhtri_2231200125\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|solutionrelative:lab3_leminhtri_2231200125\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|c:\\users\\admin\\documents\\github\\csw306_aspnet\\lab3_leminhtri_2231200125\\lab3_leminhtri_2231200125\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|solutionrelative:lab3_leminhtri_2231200125\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|c:\\users\\admin\\documents\\github\\csw306_aspnet\\lab3_leminhtri_2231200125\\lab3_leminhtri_2231200125\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|solutionrelative:lab3_leminhtri_2231200125\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|c:\\users\\admin\\documents\\github\\csw306_aspnet\\lab3_leminhtri_2231200125\\lab3_leminhtri_2231200125\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|solutionrelative:lab3_leminhtri_2231200125\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|c:\\users\\admin\\documents\\github\\csw306_aspnet\\lab3_leminhtri_2231200125\\lab3_leminhtri_2231200125\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|solutionrelative:lab3_leminhtri_2231200125\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|c:\\users\\admin\\documents\\github\\csw306_aspnet\\lab3_leminhtri_2231200125\\lab3_leminhtri_2231200125\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|solutionrelative:lab3_leminhtri_2231200125\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|c:\\users\\admin\\documents\\github\\csw306_aspnet\\lab3_leminhtri_2231200125\\lab3_leminhtri_2231200125\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|solutionrelative:lab3_leminhtri_2231200125\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|c:\\users\\admin\\documents\\github\\csw306_aspnet\\lab3_leminhtri_2231200125\\lab3_leminhtri_2231200125\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|solutionrelative:lab3_leminhtri_2231200125\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|c:\\users\\admin\\documents\\github\\csw306_aspnet\\lab3_leminhtri_2231200125\\lab3_leminhtri_2231200125\\controllers\\loanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|solutionrelative:lab3_leminhtri_2231200125\\controllers\\loanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|c:\\users\\admin\\documents\\github\\csw306_aspnet\\lab3_leminhtri_2231200125\\lab3_leminhtri_2231200125\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|solutionrelative:lab3_leminhtri_2231200125\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|c:\\users\\admin\\documents\\github\\csw306_aspnet\\lab3_leminhtri_2231200125\\lab3_leminhtri_2231200125\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|solutionrelative:lab3_leminhtri_2231200125\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|c:\\users\\admin\\documents\\github\\csw306_aspnet\\lab3_leminhtri_2231200125\\lab3_leminhtri_2231200125\\dtos\\authdtos\\activatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|solutionrelative:lab3_leminhtri_2231200125\\dtos\\authdtos\\activatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|c:\\users\\admin\\documents\\github\\csw306_aspnet\\lab3_leminhtri_2231200125\\lab3_leminhtri_2231200125\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|solutionrelative:lab3_leminhtri_2231200125\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|c:\\users\\admin\\documents\\github\\csw306_aspnet\\lab3_leminhtri_2231200125\\lab3_leminhtri_2231200125\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|solutionrelative:lab3_leminhtri_2231200125\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|c:\\users\\admin\\documents\\github\\csw306_aspnet\\lab3_leminhtri_2231200125\\lab3_leminhtri_2231200125\\dtos\\authdtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|c:\\users\\admin\\documents\\github\\csw306_aspnet\\lab3_leminhtri_2231200125\\lab3_leminhtri_2231200125\\dtos\\authdtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|solutionrelative:lab3_leminhtri_2231200125\\dtos\\authdtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|c:\\users\\admin\\documents\\github\\csw306_aspnet\\lab3_leminhtri_2231200125\\lab3_leminhtri_2231200125\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{08C60C3D-6156-47E0-B5FC-E433F9EA2D7B}|Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125.csproj|solutionrelative:lab3_leminhtri_2231200125\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,15 +74,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "BookController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Controllers\\BookController.cs",
               "RelativeDocumentMoniker": "Lab3_LeMinhTri_2231200125\\Controllers\\BookController.cs",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Controllers\\BookController.cs",
               "RelativeToolTip": "Lab3_LeMinhTri_2231200125\\Controllers\\BookController.cs",
-              "ViewState": "AgIAANUAAAAAAAAAAAAqwOcAAABOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T10:04:35.089Z",
+              "WhenOpened": "2025-11-19T02:45:15.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Lab3_LeMinhTri_2231200125\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Lab3_LeMinhTri_2231200125\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAYwGEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T02:44:20.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoansController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Controllers\\LoansController.cs",
+              "RelativeDocumentMoniker": "Lab3_LeMinhTri_2231200125\\Controllers\\LoansController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Controllers\\LoansController.cs",
+              "RelativeToolTip": "Lab3_LeMinhTri_2231200125\\Controllers\\LoansController.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAYwHYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T02:27:11.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReportController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Controllers\\ReportController.cs",
+              "RelativeDocumentMoniker": "Lab3_LeMinhTri_2231200125\\Controllers\\ReportController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Controllers\\ReportController.cs",
+              "RelativeToolTip": "Lab3_LeMinhTri_2231200125\\Controllers\\ReportController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwA0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T02:13:14.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Lab3_LeMinhTri_2231200125\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Lab3_LeMinhTri_2231200125\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T01:52:26.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Lab3_LeMinhTri_2231200125\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Lab3_LeMinhTri_2231200125\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T01:27:35.943Z",
               "EditorCaption": ""
             },
             {
@@ -73,40 +158,27 @@
               "RelativeDocumentMoniker": "Lab3_LeMinhTri_2231200125\\Models\\User.cs",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Models\\User.cs",
               "RelativeToolTip": "Lab3_LeMinhTri_2231200125\\Models\\User.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAA8wCcAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAA7wDAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-11T09:56:24.1Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Lab3_LeMinhTri_2231200125\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Lab3_LeMinhTri_2231200125\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAF8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAqwHQAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-11T07:19:35.317Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Models\\Book.cs",
-              "RelativeDocumentMoniker": "Lab3_LeMinhTri_2231200125\\Models\\Book.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Models\\Book.cs",
-              "RelativeToolTip": "Lab3_LeMinhTri_2231200125\\Models\\Book.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAwDwAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T07:49:32.621Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "ActivateDTO.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\DTOs\\AuthDTOs\\ActivateDTO.cs",
               "RelativeDocumentMoniker": "Lab3_LeMinhTri_2231200125\\DTOs\\AuthDTOs\\ActivateDTO.cs",
@@ -114,23 +186,12 @@
               "RelativeToolTip": "Lab3_LeMinhTri_2231200125\\DTOs\\AuthDTOs\\ActivateDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T07:38:34.986Z"
+              "WhenOpened": "2025-11-11T07:38:34.986Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RegisterDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\DTOs\\AuthDTOs\\RegisterDTO.cs",
-              "RelativeDocumentMoniker": "Lab3_LeMinhTri_2231200125\\DTOs\\AuthDTOs\\RegisterDTO.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\DTOs\\AuthDTOs\\RegisterDTO.cs",
-              "RelativeToolTip": "Lab3_LeMinhTri_2231200125\\DTOs\\AuthDTOs\\RegisterDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T07:38:14.529Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\DTOs\\AuthDTOs\\LoginDto.cs",
               "RelativeDocumentMoniker": "Lab3_LeMinhTri_2231200125\\DTOs\\AuthDTOs\\LoginDto.cs",
@@ -142,28 +203,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\appsettings.json",
-              "RelativeDocumentMoniker": "Lab3_LeMinhTri_2231200125\\appsettings.json",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\appsettings.json",
-              "RelativeToolTip": "Lab3_LeMinhTri_2231200125\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-11T07:16:34.016Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Program.cs",
               "RelativeDocumentMoniker": "Lab3_LeMinhTri_2231200125\\Program.cs",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Program.cs",
               "RelativeToolTip": "Lab3_LeMinhTri_2231200125\\Program.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAAwEEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAcwFwAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-11T07:15:22.739Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\appsettings.json",
+              "RelativeDocumentMoniker": "Lab3_LeMinhTri_2231200125\\appsettings.json",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\appsettings.json",
+              "RelativeToolTip": "Lab3_LeMinhTri_2231200125\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-11T07:16:34.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RegisterDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\DTOs\\AuthDTOs\\RegisterDTO.cs",
+              "RelativeDocumentMoniker": "Lab3_LeMinhTri_2231200125\\DTOs\\AuthDTOs\\RegisterDTO.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\DTOs\\AuthDTOs\\RegisterDTO.cs",
+              "RelativeToolTip": "Lab3_LeMinhTri_2231200125\\DTOs\\AuthDTOs\\RegisterDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T07:38:14.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "Lab3_LeMinhTri_2231200125\\Models\\Book.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\CSW306_ASPNET\\Lab3_LeMinhTri_2231200125\\Lab3_LeMinhTri_2231200125\\Models\\Book.cs",
+              "RelativeToolTip": "Lab3_LeMinhTri_2231200125\\Models\\Book.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAwDwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T07:49:32.621Z"
             }
           ]
         }

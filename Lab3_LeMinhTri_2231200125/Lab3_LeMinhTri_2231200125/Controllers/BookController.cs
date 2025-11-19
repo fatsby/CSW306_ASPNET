@@ -2,6 +2,7 @@
 using Lab3_LeMinhTri_2231200125.DTOs.BookDTOs;
 using Lab3_LeMinhTri_2231200125.Models;
 using Lab3_LeMinhTri_2231200125.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -49,8 +50,9 @@ namespace Lab3_LeMinhTri_2231200125.Controllers {
             return Ok(book);
         }
 
-        [HttpPost]
+        [HttpPost("upload")]
         [Consumes("multipart/form-data")]
+        [Authorize(Policy = "VerifiedEmailOnly")]
         public async Task<IActionResult> CreateAsync([FromForm] CreateBookDTO request) {
             if (!ModelState.IsValid) {
                 return BadRequest(ModelState);

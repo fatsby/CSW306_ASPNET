@@ -2,9 +2,11 @@
 using Lab3_LeMinhTri_2231200125.DTOs.LoanDTOs;
 using Lab3_LeMinhTri_2231200125.Models;
 using Lab3_LeMinhTri_2231200125.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace Lab3_LeMinhTri_2231200125.Controllers {
     [Route("api/loans")]
@@ -106,6 +108,26 @@ namespace Lab3_LeMinhTri_2231200125.Controllers {
             _dbContext.Loans.Update(loan);
             await _dbContext.SaveChangesAsync();
             return Ok(loan);
+        }
+
+        [HttpGet("/history")]
+        [Authorize(Policy = "MinimumMembership")]
+        public async Task<IActionResult> GetLoanHistoryAsync() {
+            var userIdString = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (string.IsNullOrEmpty(userIdString)) {
+                return Unauthorized("User ID claim not found.");
+            }
+
+            if (!int.TryParse(userIdString, out int userId)) {
+                return BadRequest("Invalid User ID format.");
+            }
+
+            var loanHistory = await _dbContext.Loans
+                .Where(loan => loan.UserId == userId && loan.Status == 1) // 1 = returned
+                .ToListAsync();
+
+            return Ok(loanHistory);
         }
     }
 }
