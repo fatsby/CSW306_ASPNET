@@ -9,3 +9,5 @@ https://drive.google.com/file/d/1TgAJmWFNejuoCRtFBqZVV_IMh7td_08n/view?usp=shari
 Data Mining
 <br>
 https://drive.google.com/file/d/1WVS_w1dWE2TEqD6Sod1Qa7XAoaHi5HqF/view?usp=sharing
+<br>
+https://drive.google.com/drive/u/1/folders/1sO1xIzoWG-05jiTL4zQc95bHcBlxpLm-
