@@ -5,3 +5,7 @@ https://drive.google.com/file/d/1cI8ywZNhGEDi2_tfzFJKSNaJ5WecH4bH/view?usp=shari
 Software Testing
 <br>
 https://drive.google.com/file/d/1TgAJmWFNejuoCRtFBqZVV_IMh7td_08n/view?usp=sharing
+<br>
+Data Mining
+<br>
+https://drive.google.com/file/d/1WVS_w1dWE2TEqD6Sod1Qa7XAoaHi5HqF/view?usp=sharing
